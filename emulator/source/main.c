@@ -1,7 +1,9 @@
 // ITJ - RISC-V Emulator in C
 // 
-// Created: 10/23/2021
-// Modfied: 10/23/2021
+// DEVember is here!! :D
+//
+// Created: Thursday, NOV/11/21
+// Modfied: 11/12/21
 
 
 #include <stdio.h>
@@ -9,6 +11,5 @@
 
 int main (){
 
-  
   return 0;
 }
