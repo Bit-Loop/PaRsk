@@ -23,8 +23,8 @@ build_stage:build_all:
     - make 
   artifacts:
     paths:
-      - ./build/
-    expire_in: 1 week
+      - ./emulator/source/
+    expire_in: 1 hour
 
 
 test_stage:default:
