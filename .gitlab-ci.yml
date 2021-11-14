@@ -23,7 +23,7 @@ build_stage:build_all:
     - make 
   artifacts:
     paths:
-      - ./emulator/source/
+      - ~/emulator/build/
     expire_in: 1 hour
 
 
@@ -35,6 +35,8 @@ test_stage:default:
     - build_stage:build_all
   script: 
     - echo "run stuff here"
+    - cd ~/emulator/build/
+    - ./*.out
   
   
   #artifacts:
