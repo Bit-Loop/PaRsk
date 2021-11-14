@@ -17,9 +17,9 @@ build_stage:build_all:
   dependencies: []
   script:
     - ls
-    - cd emulator/source/
+    - cd emulator/build/
     - ls 
-    - cmake ../build/
+    - cmake ../source/
     - make 
   artifacts:
     paths:
