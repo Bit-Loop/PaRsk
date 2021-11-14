@@ -1,0 +1,44 @@
+stages:
+#  - check_stage
+  - build_stage
+  - test_stage
+
+#check_stage:software_cpplint:
+#  stage: check_stage
+#  dependencies: []
+#  script:
+#    - cd software
+#    - cpplint --recursive ./ 
+
+build_stage:build_all:
+  stage: build_stage
+  tags: 
+    - shell
+  dependencies: []
+  script:
+    - ls
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make 
+  artifacts:
+    paths:
+      - ./build/
+    expire_in: 1 week
+
+
+test_stage:default:
+  stage: test_stage
+  tags:
+    - shell
+  dependencies:
+    - build_stage:build_all
+  script: 
+    - echo "run stuff here"
+  
+  
+  #artifacts:
+  #  when: always
+  #  expire_in: 1 week
+  #  reports:
+  #    junit: test_liblittleriscy_emulator_report.xml
