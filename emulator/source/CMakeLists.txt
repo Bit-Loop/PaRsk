@@ -3,4 +3,4 @@ project(PaRsk)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(PaRsk main.c)
+add_executable(PaRsk main.c "modules/controller.c" "modules/controller.c" "modules/RV32i.c" "modules/RV32i.h" "modules/ALU.h" "modules/ALU.c")
