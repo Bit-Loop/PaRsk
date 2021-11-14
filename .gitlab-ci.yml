@@ -19,7 +19,7 @@ build_stage:build_all:
     - ls
     - cd emulator/source/
     - ls 
-    - cmake /home/emulator/build/
+    - cmake ../../build/
     - make 
   artifacts:
     paths:
