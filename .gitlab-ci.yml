@@ -38,9 +38,7 @@ test_stage:default:
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
   script:
-    - git push "https://bitloop:${CI_GIT_TOKEN}@${CI_REPOSITORY_URL#*@}" "HEAD:${CI_COMMIT_TAG}"
-  script: 
-    - echo "run stuff here"
+    - git push https://bitloop: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@https://github.com/Bit-Loop/PaRsk.git "HEAD:${CI_COMMIT_TAG}" && echo "pushed"
     - cd ~/emulator/build/
     - ./*.out
   
