@@ -36,7 +36,8 @@ test_stage:default:
     - build_stage:build_all
     # GitLab --> GitHub ref 
   script:
-    - git push https://bitloop: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@https://github.com/Bit-Loop/PaRsk.git  && echo "pushed"
+    - githubHead=$(git remote show https://github.com/Bit-Loop/PaRsk.git | awk '/HEAD branch/ {print $NF}')
+    - git push https://bitloop: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@https://github.com/Bit-Loop/PaRsk.git  && echo "pushed" HEAD:githubHead
     - cd ~/emulator/build/
     - ./*.out
   
