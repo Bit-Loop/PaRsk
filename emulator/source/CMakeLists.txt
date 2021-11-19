@@ -5,4 +5,4 @@ project(PaRsk)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_CPPLINT "cpplint")
 
-add_executable(PaRsk.out main.c "modules/controller.c" "modules/controller.h" "modules/RV32i.c" "modules/RV32i.h" "modules/ALU.h" "modules/ALU.c" "modules/config.c" "modules/regfile.c")
+add_executable(PaRsk.out main.c "modules/controller.c" "modules/controller.h" "modules/RV32i.c" "modules/RV32i.h" "modules/ALU.h" "modules/ALU.c" "modules/config.h" "modules/regfile.c")
