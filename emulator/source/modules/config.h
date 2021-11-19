@@ -4,7 +4,7 @@
 extern "C" { // if true ^ then use C naming rules for C++ compilation
 #endif
 
-	define regWidth uint32_t;
+	#define regWidth uint32_t
 	
 #ifdef __cplusplus // if true exit the extern c block
 }
