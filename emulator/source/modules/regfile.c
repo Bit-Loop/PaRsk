@@ -4,6 +4,7 @@
 //  REF: https://dzone.com/articles/introduction-to-the-risc-v-architecture
 //
 #include "config.h"
+#include <stdint.h>
 
 static regWidth pc; // Program Counter
 //
