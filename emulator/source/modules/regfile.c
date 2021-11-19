@@ -9,7 +9,7 @@
 static regWidth pc; // Program Counter
 //
 //
-static const regWidth = 0; // x0 - zero
+static const regWidth zero = 0; // x0 - zero
 //
 static regWidth ra; // x1 -  Return function ADDR
 static regWidth sp; // x2 - Stack pointer
