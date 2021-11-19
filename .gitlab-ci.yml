@@ -20,14 +20,13 @@ build_stage:build_all:
     - ls
     - cd emulator/build/
     - ls 
-    - cmake ../source/
+    - cmake ../source/ >> ../source/cpp.txt
     - make 
   artifacts:
     paths:
       - ~/emulator/build/
     expire_in: 1 hour
-
-
+    
 test_stage:default:
   stage: test_stage
   tags:
