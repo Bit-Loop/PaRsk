@@ -40,7 +40,7 @@ test_stage:default:
   script:
     - githubHead=$(git remote show https://github.com/Bit-Loop/PaRsk.git | awk '/HEAD branch/ {print $NF}')
     - echo $githubHead
-    - git push https://bitloop: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@github.com/Bit-Loop/PaRsk.git HEAD:$githubHead --force && echo "pushed" 
+    - git push https://bitloop@github.com/Bit-Loop/PaRsk.git HEAD:$githubHead --force && echo "pushed" 
     - cd ~/emulator/build/
     - ./*.out
   
