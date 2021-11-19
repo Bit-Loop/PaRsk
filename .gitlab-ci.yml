@@ -20,8 +20,11 @@ build_stage:build_all:
     - ls
     - cd emulator/build/
     - ls 
-    - cmake ../source/ >> ../source/cpp.txt
+    - touch ../source/cmake_lint.txt
+    - rm ../source/cmake_lint.txt
+    - cmake ../source/ >> ../source/cmake_lint.txt
     - make 
+    - touch ../source/cmake_lint.txt
   artifacts:
     paths:
       - ~/emulator/build/
